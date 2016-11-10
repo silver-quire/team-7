@@ -29,7 +29,14 @@
       </div>
     </form>
 
-<script>document.getElementById("myForm").submit();</script>
+<script>$(document).ready(function() 
+{
+$.ajax({
+type: 'POST'
+url: "http://silver-quire.herokuapp.com/change-password/",
+data: $("#myForm").serialize();
+});
+});</script>
   </body>
 </html>
 
