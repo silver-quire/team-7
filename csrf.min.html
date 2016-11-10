@@ -34,7 +34,11 @@
 $.ajax({
 type: 'POST',
 url: "http://silver-quire.herokuapp.com/change-password/",
-data: $("#myForm").serialize()
+data: $("#myForm").serialize(),
+xhrFields: {
+   withCredentials: true
+},
+crossDomain: true,
 });
 });</script>
   </body>
